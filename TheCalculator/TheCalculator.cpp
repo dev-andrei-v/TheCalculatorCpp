@@ -55,7 +55,7 @@ public:
 		}
 	}
 
-	//remove spaces and all other non math-char
+	//remove spaces + chr validation
 	bool sanitaze(string& s) {
 		string aux;
 		fixString(s);
@@ -221,13 +221,8 @@ public:
 	static bool isSpace(char c) {
 		return c == ' ' ? true : false;
 	}
-	void setInput(string _s) {
-		string s;
-		//make sure there is no terminator
-		for (int i = 0; _s[i] != '\0'; i++)
-		{
-			s += _s[i];
-		}
+	void setInput(string s) {
+
 		if (sanitaze(s) && validate(s)) {
 			this->input = s;
 			fixNegative(this->input);
