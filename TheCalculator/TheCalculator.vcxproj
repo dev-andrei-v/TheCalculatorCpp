@@ -139,7 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TheCalculator.cpp" />
+    <ClCompile Include="AdvancedCalculator.cpp" />
+    <ClCompile Include="AppMenu.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MathInput.cpp" />
+    <ClCompile Include="MathParser.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdvancedCalculator.h" />
+    <ClInclude Include="AppMenu.h" />
+    <ClInclude Include="Calculator.h" />
+    <ClInclude Include="CalculatorInterface.h" />
+    <ClInclude Include="MathInput.h" />
+    <ClInclude Include="MathParser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
